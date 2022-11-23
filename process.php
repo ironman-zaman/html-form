@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
     if (!empty($firstName) && !empty($lastName) && !empty($email) && !empty($color)) {
         
         /*host, username, password, dbname*/
-        $link = mysqli_connect("localhost", "root", "", "form");
+        $link = mysqli_connect("localhost", "root", "", "register");
         
         // Check connection
         if($link === false){
